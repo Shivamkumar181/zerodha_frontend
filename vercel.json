@@ -1,0 +1,13 @@
+{
+  "buildCommand": "npm run build",
+  "outputDirectory": "build",
+  "devCommand": "npm run dev",
+  "installCommand": "npm install",
+  "framework": "create-react-app", 
+  "rewrites": [
+    {
+      "source": "/api/(.*)",
+      "destination": "https://your-backend-app.vercel.app/api/$1"
+    }
+  ]
+}

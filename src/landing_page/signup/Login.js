@@ -32,7 +32,7 @@ const Login = () => {
     e.preventDefault();
     try {
       const { data } = await axios.post(
-        "http://localhost:3002/login",
+        "https://zerodha-backend-beige.vercel.app/login",
         {
           ...inputValue,
         },
@@ -44,7 +44,7 @@ const Login = () => {
         handleSuccess(message);
         setTimeout(() => {
         //   navigate("/");
-        window.location.href = "http://localhost:3001"; //dashboard link
+        window.location.href = "https://zerodha-dashboard-t941.onrender.com/"; //dashboard link
         }, 1000);
       } else {
         handleError(message);

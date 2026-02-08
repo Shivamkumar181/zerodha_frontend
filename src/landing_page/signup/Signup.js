@@ -34,7 +34,7 @@ const Signup = () => {
     e.preventDefault();
     try {
       const { data } = await axios.post(
-        "http://localhost:3002/signup",
+        "https://zerodha-backend-beige.vercel.app/signup",
         {
           ...inputValue,
         },
@@ -45,7 +45,7 @@ const Signup = () => {
         handleSuccess(message);
         setTimeout(() => {
         //   navigate("/");
-        window.location.href = "http://localhost:3001"; //dashboard link
+        window.location.href = "https://zerodha-dashboard-t941.onrender.com/"; //dashboard link
         }, 1000);
       } else {
         handleError(message);

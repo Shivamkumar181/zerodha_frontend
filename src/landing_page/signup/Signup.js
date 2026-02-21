@@ -45,7 +45,7 @@ const Signup = () => {
         handleSuccess(message);
         setTimeout(() => {
         //   navigate("/");
-        window.location.href = "https://zerodha-dashboard-t941.onrender.com/"; //dashboard link
+        window.location.href = "https://zerodha-dashboard-i5w0.onrender.com/"; //dashboard link
         }, 1000);
       } else {
         handleError(message);
